@@ -18,11 +18,11 @@
 
 ## 平台截图
 
-![Home](.\img\Home.jpg)
+![Home](/img/Home.jpg)
 
-![Challenges](.\img\Challenges.jpg)
+![Challenges](/img/Challenges.jpg)
 
-![Login](.\img\Login.jpg)
+![Login](/img/Login.jpg)
 
 ## 部署教程
 
