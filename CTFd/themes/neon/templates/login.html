@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block stylesheets %}{% endblock %}
+
+{% block content %}
+  <div class="container py-5 mb-5">
+    <h1 class="mb-5 text-center">登录
+    </h1>
+    <div class="row py-4">
+      <div class="col-md-8 order-md-2">
+        {% include "components/errors.html" %}
+        {% with form = Forms
+          .auth
+          .LoginForm() %}
+        <form method="post" accept-charset="utf-8" autocomplete="off">
+          <div class="mb-3">
+            {{ form.name.label }}
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">@</span>
+              </div>
+              {{ form.name(class="form-control", value=name, placeholder="输入您的用户名") }}
+              <div class="invalid-feedback" style="width: 100%;">
+                用户名是必填的
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            {{ form.password.label }}
+
+            <a class="float-right align-text-to-button" href="{{ url_for('auth.reset_password') }}">
+              忘记密码
+            </a>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">#</span>
+              </div>
+              {{ form.password(class="form-control", value=password, placeholder="输入您的密码") }}
+              <div class="invalid-feedback">
+                请输入有效密码
+              </div>
+            </div>
+          </div>
+          <hr class="mb-4">
+          {{ form.submit(class="btn btn-outline-success btn-shadow btn-lg btn-block") }}
+          {{ form.nonce() }}
+        </form>
+        {% endwith %}
+      </div>
+      <div class="col-md-2 order-md-1"></div>
+      <div class="col-md-2 order-md-3"></div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}{% endblock %}
