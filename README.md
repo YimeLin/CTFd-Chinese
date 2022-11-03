@@ -24,6 +24,8 @@
 
 ![Login](/img/Login.jpg)
 
+------
+
 ## 部署教程
 
 ### 1.安装Docker
@@ -42,7 +44,7 @@ chmod +x /usr/local/bin/docker-compose
 ### 3.克隆本项目
 
 ```
-git clone https://github.com/WaYime/CTFd-Chinese.git
+git clone https://github.com/YimeLin/CTFd-Chinese.git
 ```
 
 ### 4.使用Docker构建
