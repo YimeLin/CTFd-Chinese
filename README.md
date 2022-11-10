@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # CTF在线平台
 
 ## 项目介绍
@@ -133,7 +132,3 @@ docker-compose up -d
 [Gu-f/*CTFd*_*chinese*_CN](https://github.com/Gu-f/CTFd_chinese_CN)
 
 [chainflag/*ctfd*-neon-*theme*](https://github.com/chainflag/ctfd-neon-theme)
-
-
-
->>>>>>> 3a3133b499516f6cf36a7e1a0c1fb9626eeab2c9
